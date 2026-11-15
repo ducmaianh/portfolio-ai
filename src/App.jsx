@@ -85,35 +85,26 @@ function ScrollToTop() {
 }
 
 export default function App() {
-  // Initialise theme: stored pref → system pref → dark default
-  const getInitialTheme = () => {
-    const stored = localStorage.getItem('portfolio-theme');
-    if (stored) return stored === 'dark';
-    return !window.matchMedia('(prefers-color-scheme: light)').matches;
-  };
-
+  // Honour an explicitly saved light theme; otherwise start in dark mode.
   const [isDark, setIsDark] = useState(() => {
-    // During SSR / first render, default to dark; resolved in effect
-    return true;
+    try {
+      return localStorage.getItem('portfolio-theme') !== 'light';
+    } catch {
+      return true;
+    }
   });
 
   useEffect(() => {
-    const dark = getInitialTheme();
-    setIsDark(dark);
-    if (!dark) {
-      document.body.classList.add('light');
-    } else {
-      document.body.classList.remove('light');
+    document.body.classList.toggle('light', !isDark);
+    try {
+      localStorage.setItem('portfolio-theme', isDark ? 'dark' : 'light');
+    } catch {
+      // Theme switching still works when browser storage is unavailable.
     }
-  }, []);
+  }, [isDark]);
 
   const toggleTheme = () => {
-    setIsDark((prev) => {
-      const next = !prev;
-      document.body.classList.toggle('light', !next);
-      localStorage.setItem('portfolio-theme', next ? 'dark' : 'light');
-      return next;
-    });
+    setIsDark((previous) => !previous);
   };
 
   return (

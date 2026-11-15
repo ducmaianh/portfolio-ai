@@ -155,6 +155,7 @@ export default function Hero() {
         position: 'relative',
         minHeight: '100vh',
         display: 'flex',
+        flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
         overflow: 'hidden',
@@ -305,15 +306,12 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <motion.button
+        className="hero-scroll-indicator"
         onClick={() => scrollTo('about')}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.8 }}
         style={{
-          position: 'absolute',
-          bottom: '2rem',
-          left: '50%',
-          transform: 'translateX(-50%)',
           background: 'none',
           border: 'none',
           cursor: 'pointer',

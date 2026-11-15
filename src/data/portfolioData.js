@@ -82,7 +82,7 @@ export const EDUCATION = [
 // These are familiarity lists, with no proficiency scores or mastery claims.
 export const SKILLS = {
   'Programming Languages': [
-    'Python', 'Java', 'TypeScript', 'JavaScript', 'C', 'C++', 'Go',
+    'Python', 'Java', 'TypeScript', 'JavaScript', 'C', 'C++',
   ],
   'AI / Machine Learning / Data Science': [
     'NumPy', 'Pandas', 'PyTorch', 'TensorFlow', 'Matplotlib', 'scikit-learn',
@@ -144,7 +144,7 @@ export const FOUNDATION_CARDS = {
     label: 'Currently Learning',
     learning: 'all',
   },
-  'Machine Learning & Deep Learning Foundations': {
+  'Machine Learning & Dee`p Learning Foundations': {
     label: 'Coursework & Study',
     learning: [
       'Supervised & Unsupervised Learning', 'Regression & Classification',
@@ -227,7 +227,7 @@ export const PROJECTS = [
     imageAlt: 'Weapon detection application overview from the project repository',
     imageFit: 'cover',
     imagePosition: 'top',
-    githubUrl: 'https://github.com/JoeyDuc/weapon-detection-yolo',
+    githubUrl: 'https://github.com/ducmaianh/weapon-detection-yolo',
     repositoryLabel: 'GitHub repository',
   },
   {
@@ -245,7 +245,7 @@ export const PROJECTS = [
     featured: true,
     gradient: 'from-purple-500 to-blue-600',
     emoji: '💬',
-    githubUrl: 'https://github.com/JoeyDuc/message-classification',
+    githubUrl: 'https://github.com/ducmaianh/message-classification',
     repositoryLabel: 'GitHub repository',
   },
   {
@@ -267,7 +267,7 @@ export const PROJECTS = [
     imageAlt: 'Repository diagram of the career assistant supervisor and specialist agents',
     imageFit: 'contain',
     imagePosition: 'center',
-    githubUrl: 'https://github.com/JoeyDuc/AI-Recommendation-System',
+    githubUrl: 'https://github.com/ducmaianh/AI-Recommendation-System',
     repositoryLabel: 'GitHub repository',
   },
   {
@@ -285,7 +285,7 @@ export const PROJECTS = [
     featured: false,
     gradient: 'from-purple-500 to-blue-600',
     emoji: '📡',
-    githubUrl: 'https://github.com/JoeyDuc/iot-sensor-monitor-system',
+    githubUrl: 'https://github.com/ducmaianh/iot-sensor-monitor-system',
     repositoryLabel: 'GitHub repository',
   },
   {
@@ -303,7 +303,7 @@ export const PROJECTS = [
     featured: false,
     gradient: 'from-blue-500 to-cyan-600',
     emoji: '🏦',
-    githubUrl: 'https://github.com/JoeyDuc/distributed-banking-system',
+    githubUrl: 'https://github.com/ducmaianh/distributed-banking-system',
     repositoryLabel: 'GitHub repository',
   },
   {
@@ -321,7 +321,7 @@ export const PROJECTS = [
     featured: false,
     gradient: 'from-purple-500 to-blue-600',
     emoji: '📚',
-    githubUrl: 'https://github.com/JoeyDuc/Book-Gift-Shop',
+    githubUrl: 'https://github.com/ducmaianh/Book-Gift-Shop',
     repositoryLabel: 'GitHub repository',
   },
 ];
@@ -333,8 +333,8 @@ export const TESTIMONIALS = [];
 export const CONTACT_INFO = {
   phone: null,
   email: 'anhduc.coder@gmail.com',
-  github: 'github.com/JoeyDuc',
-  githubUrl: 'https://github.com/JoeyDuc',
+  github: 'github.com/ducmaianh',
+  githubUrl: 'https://github.com/ducmaianh',
   linkedin: null,
   linkedinUrl: null,
   resume: null,

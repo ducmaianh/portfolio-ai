@@ -18,7 +18,6 @@ import reactIcon from '../assets/tech/react.svg';
 import htmlIcon from '../assets/tech/html.svg';
 import cssIcon from '../assets/tech/css.svg';
 import bootstrapIcon from '../assets/tech/bootstrap.svg';
-import goIcon from '../assets/tech/go.svg';
 import springBootIcon from '../assets/tech/springboot.svg';
 import fastapiIcon from '../assets/tech/fastapi.svg';
 import langchainIcon from '../assets/tech/langchain.svg';
@@ -66,7 +65,6 @@ const TECHNOLOGY_LOGOS = {
   'Jupyter Notebook': [jupyterIcon],
   React: [reactIcon],
   'HTML/CSS/Bootstrap': [htmlIcon, cssIcon, bootstrapIcon],
-  Go: [goIcon],
   'Spring Boot': [springBootIcon],
   FastAPI: [fastapiIcon],
   LangChain: [langchainIcon],
